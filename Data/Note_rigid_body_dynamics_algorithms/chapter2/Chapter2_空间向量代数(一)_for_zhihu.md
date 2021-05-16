@@ -80,7 +80,7 @@ dyadic是向量的线性映射。任何dyadic可以表达为dyads的线性和,�
 <img src="https://www.zhihu.com/equation?tex=\omega=\omega_{x} i+\omega_{y} j+\omega_{z} k \quad, \quad \boldsymbol{v}_{O}=v_{O x} \boldsymbol{i}+v_{O y} j+v_{O z} \boldsymbol{k}" alt="\omega=\omega_{x} i+\omega_{y} j+\omega_{z} k \quad, \quad \boldsymbol{v}_{O}=v_{O x} \boldsymbol{i}+v_{O y} j+v_{O z} \boldsymbol{k}" class="ee_img tr_noresize" eeimg="1">
 我们的目标是得到表示相同运动的空间速度向量 <img src="https://www.zhihu.com/equation?tex=\hat{\boldsymbol{v}} \in \mathrm{M}^{6}" alt="\hat{\boldsymbol{v}} \in \mathrm{M}^{6}" class="ee_img tr_noresize" eeimg="1"> 。首先定义 <img src="https://www.zhihu.com/equation?tex=M^6" alt="M^6" class="ee_img tr_noresize" eeimg="1"> 上的基:
  <img src="https://www.zhihu.com/equation?tex=\mathcal{D}_{O}=\left\{\boldsymbol{d}_{O x}, \boldsymbol{d}_{O y}, \boldsymbol{d}_{O z}, \boldsymbol{d}_{x}, \boldsymbol{d}_{y}, \boldsymbol{d}_{z}\right\} \subset \mathrm{M}^{6}" alt="\mathcal{D}_{O}=\left\{\boldsymbol{d}_{O x}, \boldsymbol{d}_{O y}, \boldsymbol{d}_{O z}, \boldsymbol{d}_{x}, \boldsymbol{d}_{y}, \boldsymbol{d}_{z}\right\} \subset \mathrm{M}^{6}" class="ee_img tr_noresize" eeimg="1"> ,如图所示，其中 <img src="https://www.zhihu.com/equation?tex=d_{O x}、d_{O y}、d_{O z}" alt="d_{O x}、d_{O y}、d_{O z}" class="ee_img tr_noresize" eeimg="1"> 是绕 <img src="https://www.zhihu.com/equation?tex=O_x,O_y,O_z" alt="O_x,O_y,O_z" class="ee_img tr_noresize" eeimg="1"> 的单位旋转。因此可得：
-![空间速度坐标系](./2.1.jpg)
+![空间速度坐标系](https://github.com/fhln/Markdown4Zhihu/blob/master/Data/1/2.1.jpg)
 
 <img src="https://www.zhihu.com/equation?tex=\hat{v}=\omega_{x} d_{O x}+\omega_{y} d_{O y}+\omega_{z} d_{O z}+v_{O x} d_{x}+v_{O y} d_{y}+v_{O z} d_{z}
 " alt="\hat{v}=\omega_{x} d_{O x}+\omega_{y} d_{O y}+\omega_{z} d_{O z}+v_{O x} d_{x}+v_{O y} d_{y}+v_{O z} d_{z}
@@ -117,7 +117,7 @@ v_{O z}
 " alt="\hat{\boldsymbol{v}}^{\prime}=\omega_{x} \boldsymbol{d}_{P x}+\omega_{y} \boldsymbol{d}_{P y}+\omega_{z} \boldsymbol{d}_{P z}+v_{P x} \boldsymbol{d}_{x}+v_{P y} \boldsymbol{d}_{y}+v_{P z} \boldsymbol{d}_{z} \tag{1}
 " class="ee_img tr_noresize" eeimg="1">
 不妨选择 <img src="https://www.zhihu.com/equation?tex=P" alt="P" class="ee_img tr_noresize" eeimg="1"> 在 <img src="https://www.zhihu.com/equation?tex=O_{xyz}" alt="O_{xyz}" class="ee_img tr_noresize" eeimg="1"> 中的位置是 <img src="https://www.zhihu.com/equation?tex=(r,0,0)" alt="(r,0,0)" class="ee_img tr_noresize" eeimg="1"> ，如下图所示。此时在 <img src="https://www.zhihu.com/equation?tex=O_{xyz}" alt="O_{xyz}" class="ee_img tr_noresize" eeimg="1"> 坐标系下的线速度为:
-![原点无关性](./2.2.jpg)
+![原点无关性](https://github.com/fhln/Markdown4Zhihu/blob/master/Data/1/2.2.jpg)
 
 <img src="https://www.zhihu.com/equation?tex=\left[\begin{array}{l}
 v_{P x} \\
@@ -183,7 +183,7 @@ d_{P z}=d_{O z}-r d_{y} .
 " alt="\boldsymbol{n}_{O}=n_{O x} \boldsymbol{i}+n_{O y} \boldsymbol{j}+n_{O z} \boldsymbol{k} \quad ,\quad f=f_{x} i+f_{y} j+f_{z} k
 " class="ee_img tr_noresize" eeimg="1">
 这个坐标系也定义了 <img src="https://www.zhihu.com/equation?tex=F^6" alt="F^6" class="ee_img tr_noresize" eeimg="1"> 上的Plücker基 <img src="https://www.zhihu.com/equation?tex=\mathcal{E}_{O}=\left\{\boldsymbol{e}_{x}, \boldsymbol{e}_{y}, \boldsymbol{e}_{z}, \boldsymbol{e}_{O x}, e_{O y}, e_{O z}\right\} \subset \mathrm{F}^{6}" alt="\mathcal{E}_{O}=\left\{\boldsymbol{e}_{x}, \boldsymbol{e}_{y}, \boldsymbol{e}_{z}, \boldsymbol{e}_{O x}, e_{O y}, e_{O z}\right\} \subset \mathrm{F}^{6}" class="ee_img tr_noresize" eeimg="1"> 
-![空间力坐标系](./2.3.jpg)
+![空间力坐标系](https://github.com/fhln/Markdown4Zhihu/blob/master/Data/1/2.3.jpg)
 同理，如果 <img src="https://www.zhihu.com/equation?tex=\hat{f} \in \mathrm{F}^{6}" alt="\hat{f} \in \mathrm{F}^{6}" class="ee_img tr_noresize" eeimg="1"> 是同样的空间力，则:
 
 <img src="https://www.zhihu.com/equation?tex=\hat{f}=n_{O x} e_{x}+n_{O y} e_{y}+n_{O z} e_{z}+f_{x} e_{O x}+f_{y} e_{O y}+f_{z} e_{O z}
@@ -295,4 +295,4 @@ s_{1} & s_{2} & \cdots & s_{i} & 0 & \cdots & 0
 \end{array}\right]=J_{i} \dot{q}
 " class="ee_img tr_noresize" eeimg="1">
 >
-> ![example 2.3](2.4.jpg) 
+> ![example 2.3](https://github.com/fhln/Markdown4Zhihu/blob/master/Data/1/2.4.jpg) 
