@@ -1,7 +1,7 @@
 # Paper Reading -- "Computational Imaging for Human Activity Analysis"
 
 ## Author
-
+![这里是一个测试图片](一个测试文档/image-01.png)
 Suren Jayasuriya
 School of Arts, Media and Engineering
 School of Electrical, Computer and Energy Engineering
