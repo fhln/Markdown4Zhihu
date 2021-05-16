@@ -1,4 +1,3 @@
-#! https://zhuanlan.zhihu.com/p/372800595
 # 《刚体动力学算法笔记》Chapter1: 简介
 ## 简介
 学习《Rigid Body Dynamics Algorithms》第二版的笔记。本书由[Roy  Featherstone教授](http://www.royfeatherstone.org/)编著，书中介绍了计算刚体动力学的大部分高效算法、闭环结构、浮动基等常用算法。
