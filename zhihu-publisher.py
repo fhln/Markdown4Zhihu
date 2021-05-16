@@ -61,6 +61,7 @@ def rename_image_ref(m, original=True):
         else:
             image_ref_name = Path(m.group(1)).name
     if original:
+        print(str(image_folder_path.name))
         return "!["+m.group(1)+"]("+GITHUB_REPO_PREFIX+str(image_folder_path.name)+"/"+image_ref_name+")"
     else:
         return '<img src="'+GITHUB_REPO_PREFIX+str(image_folder_path.name)+"/" +image_ref_name +'"'
@@ -123,5 +124,4 @@ if __name__ == "__main__":
     else:
         args.input = Path(args.input)
         image_folder_path = args.input.parent/(args.input.stem)
-        print(image_folder_path)
         process_for_zhihu()
