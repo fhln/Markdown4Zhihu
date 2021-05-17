@@ -1,3 +1,5 @@
+#! https://zhuanlan.zhihu.com/p/372847498
+![Cover](../../cover_figure.png)
 # 《刚体动力学算法笔记》Chapter2: 空间向量代数(一)
 
 ## 空间向量代数(Spatial Vector Algebra)介绍
@@ -154,7 +156,7 @@ $$
 * 如果$s \cdot s_O=0$则$\hat{s}$是线向量。线方向由$s$给定，线上的点满足$\overrightarrow{O P} \times s=s_{O}$。
 * 任何空间向量可以表示为线向量和自由向量的和。
 * 任何不是自由向量的空间向量，可以如下唯一表示为线向量和平行的自由向量的和，即可以表示为一条带方向的线+线性方向的大小+角度朝向的大小。
-  $$
+$$
 \left[\begin{array}{c}
 s \\
 s_{O}-h s
@@ -184,17 +186,16 @@ $$
 * **唯一性:** $M^6$上元素和刚体运动1：1映射，$F^6$同理。
 * **相对性:** 如果刚体$B_1,B_2$的速度分别为$v_1,v_2$。$B_2$相对$B_1$的速度为:$\boldsymbol{v}_{r e l}=\boldsymbol{v}_{2}-\boldsymbol{v}_{1}$。相对加速度为$\boldsymbol{a}_{r e l}=\boldsymbol{a}_{2}-\boldsymbol{a}_{1}$。
 * **累积性:** 力空间向量可以累加。惯量也可以累积，如果两个刚体固接，整体惯量为:$I=I_1+I_2$。
-* **运动方程:** $\boldsymbol{f}=\mathrm{d} / \mathrm{d} t(\boldsymbol{I} \boldsymbol{v})=\boldsymbol{I} a+\boldsymbol{v} \times^{*} \boldsymbol{I} \boldsymbol{v}$, 
-
+* **运动方程:** $\boldsymbol{f}=\mathrm{d} / \mathrm{d} t(\boldsymbol{I} \boldsymbol{v})=\boldsymbol{I} a+\boldsymbol{v} \times^{*} \boldsymbol{I} \boldsymbol{v}$
 
 > 如图所示运动链，$v_i$代表第i个刚体的速度，$v_{Ji}$代表关节i的速度，则:
 > $$
 \boldsymbol{v}_{\mathrm{J} i}=\boldsymbol{v}_{i}-\boldsymbol{v}_{i-1}
-$$
+> $$
 > 因为关节只有一个自由度，可以表示成轴向量和速度向量:$\boldsymbol{v}_{\mathrm{J} i}=\boldsymbol{s}_{i} \dot{q}_{i}$。则:
 > $$
 \boldsymbol{v}_{i}=\boldsymbol{v}_{i-1}+\boldsymbol{s}_{i} \dot{q}_{i} =\sum_{j=1}^{i} s_{j} \dot{q}_{j} \quad\left(\boldsymbol{v}_{0}=\mathbf{0}\right)
-$$
+> $$
 > 或者可以表示为矩阵形式，其中$J_i$是$6 \times N$的Jacobian，$\dot{q}$是关节空间速度向量:
 > $$
 v_{i}=\left[\begin{array}{lllllll}
@@ -204,6 +205,5 @@ s_{1} & s_{2} & \cdots & s_{i} & 0 & \cdots & 0
 \vdots \\
 \dot{q}_{N}
 \end{array}\right]=J_{i} \dot{q}
-$$
->
-> ![example 2.3](2.4.jpg) 
+> $$
+> ![example 2.3](./2.4.jpg) 
