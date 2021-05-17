@@ -61,7 +61,6 @@ def rename_image_ref(m, original=True):
         else:
             image_ref_name = Path(m.group(1)).name
     if original:
-        print(str(image_folder_path.name))
         return "!["+m.group(1)+"]("+GITHUB_REPO_PREFIX+str(image_folder_path.name)+"/"+image_ref_name+")"
     else:
         return '<img src="'+GITHUB_REPO_PREFIX+str(image_folder_path.name)+"/" +image_ref_name +'"'
@@ -116,6 +115,7 @@ if __name__ == "__main__":
     parser.add_argument(
         '--input',
         type=str,
+        default='./Data/Note_rigid_body_dynamics_algorithms/chapter2/Chapter2_空间向量代数(一).md',
         help='Path to the file you want to transfer.')
 
     args = parser.parse_args()
